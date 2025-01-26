@@ -1,0 +1,125 @@
+
+/* universal selector */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    color: white;
+    
+}
+
+/* css variables
+ */
+:root{
+    --mainbgcolor:silver;
+    --h1color:#64645a;
+    --h1bgcolor:hsla(0, 100%, 100%, 0.5);
+    --strip1bgcolor:rgb(238,62,128);
+    --strip2bgcolor:rgb(243,106,152);
+    --strip3bgcolor:rgb(244,90,139); 
+    --strip4bgcolor:rgb(244,123,166);
+    --strip5bgcolor:rgb(245,140,178);
+    --strip6bgcolor:rgb(246,159,192);
+    --strip7bgcolor:rgb(245,176,204);
+    --strip8bgcolor:rgb(0,187,136);
+    --strip9bgcolor:rgb(140,202,242);
+    --strip10bgcolor:rgb(114,193,240);
+    --strip11bgcolor:rgb(84,162,237);
+    --strip12bgcolor:rgb(48,170,233);
+    --strip13bgcolor:rgb(0,160,230);
+    --strip14bgcolor:rgb(0,149,226);
+    --strip15bgcolor:rgb(0,136,221);
+
+}
+ body{
+    /* display: flex; */
+   
+   
+    background-color: var(--mainbgcolor);
+    padding: 20px;
+} 
+.container{
+    max-width: 1200px;
+    margin: auto;
+    width: 80%;
+    box-shadow:    0 30px 30px 5px grey;
+    animation: appear 15s linear 
+}
+
+h1{
+    color: var(--h1color);
+    background-color: var(--h1bgcolor);
+    padding: 15px;
+
+}
+
+p{
+    padding: 5px;
+    padding-left: 10px;
+    transition: all .5s;
+}
+p:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.strip1{
+    margin-top: 20px;
+    background-color: var(--strip15bgcolor);
+
+}
+.strip2{
+    background-color: var(--strip14bgcolor);
+    
+}
+.strip3{
+
+    background-color: var(--strip13bgcolor);
+}
+.strip4{
+   
+    background-color: var(--strip12bgcolor);
+
+}
+.strip5{
+    background-color: var(--strip11bgcolor);
+}
+.strip6{
+    background-color: var(--strip10bgcolor);
+}
+.strip7{
+    background-color: var(--strip9bgcolor);
+}
+.strip8{
+    background-color: var(--strip8bgcolor);
+}
+.strip9{
+    background-color: var(--strip7bgcolor);
+}
+.strip10{
+    background-color: var(--strip6bgcolor);
+}
+.strip11{
+    background-color: var(--strip5bgcolor);
+}
+.strip12{
+    background-color: var(--strip4bgcolor);
+}
+.strip13{
+    background-color: var(--strip3bgcolor);
+}
+.strip14{
+    background-color: var(--strip2bgcolor);
+}
+.strip15{
+    background-color: var(--strip1bgcolor);
+}
+
+@keyframes appear{
+    0%{opacity: 0; }
+    100%{opacity: 1;}
+
+}
